@@ -1,0 +1,20 @@
+@import "../constants/public.scss";
+
+.loader {
+  display: inline-block;
+  border: px2rem(2px) solid #fff;
+  border-top: px2rem(2px) solid $main-color-1;
+  border-radius: 50%;
+  width: px2rem(16px);
+  height: px2rem(16px);
+  animation: spin 1s linear infinite;
+
+  &.hide {
+    display: none;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}

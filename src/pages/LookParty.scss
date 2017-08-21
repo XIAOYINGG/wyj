@@ -1,0 +1,45 @@
+@import "../constants/public.scss";
+
+.look-party {
+  .swiper-container {
+    height: px2rem(150px);
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $main-color-1;
+  }
+
+  .sections {
+    &:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    background-color:#fff;
+    margin-top: px2rem(6px);
+    box-shadow: 0 0 4px 0 $shadow-color-3;
+    padding-top: px2rem(24px);
+    padding-bottom: px2rem(16px);
+    margin-bottom: px2rem(60px);
+  }
+
+  .section {
+    float: left;
+    width: 33.33%;
+    min-height: px2rem(111px);
+    text-align: center;
+    img{
+      height: px2rem(45px);
+    }
+    span{
+      font-family: PingFangSC-Light;
+      color: #000000;
+      font-size: px2rem(15px);
+      @include font-dpr(15px);
+      display: block;
+      margin-top: px2rem(5px);
+    }
+  }
+
+}

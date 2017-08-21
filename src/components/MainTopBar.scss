@@ -1,0 +1,34 @@
+@import "../constants/public.scss";
+
+.main-top-bar, .simple-top-bar {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: px2rem(44px);
+  background-color: $bar-bg-new;
+  //background-image: url($topBar-background-image);
+  //background-position: center;
+  //background-size: auto 100%;
+  box-shadow: 0 2px 13px 0 $shadow-color-4;
+
+  .back {
+    position: absolute;
+    height: px2rem(44px);
+    left: 0;
+    padding: px2rem(11.5px) px2rem(11.5px) 0 px2rem(12px) ;
+    .backImg{
+      width: px2rem(13px);
+      height: px2rem(21px);
+    }
+  }
+
+  .title {
+    text-align: center;
+    line-height: px2rem(44px);
+    font-size: px2rem(17px);
+    color: #fff;
+  }
+
+}

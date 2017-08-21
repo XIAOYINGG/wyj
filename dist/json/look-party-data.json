@@ -1,0 +1,19 @@
+{
+  "errCode": 0,
+  "data": {
+    "slides": [
+      {
+        "url": "",
+        "img": "./images/banners/banner2"
+      },
+      {
+        "url": "",
+        "img": "./images/banners/banner1"
+      },
+      {
+        "url": "",
+        "img": "./images/banners/banner3"
+      }
+    ]
+  }
+}

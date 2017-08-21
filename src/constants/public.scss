@@ -1,0 +1,69 @@
+// colors
+
+$body-bg-1: #F1F1F1;
+$body-bg-2: #FFF;
+$body-bg-3: rgba(255,255,255,0.89);
+$body-bg-4: #E11222;
+
+$input-bg-1: rgba(241,241,241,0.39);
+
+$bar-bg-1: #FDFDFD;
+$bar-bg-new: #D71418;
+
+$main-color-1: #F02B44;
+
+$shadow-color-1: #999;
+
+$shadow-color-2: #C7C7C7;
+
+$shadow-color-3: rgba(255,176,176,0.50);
+
+$shadow-color-4: rgba(255,0,36,0.37);
+$shadow-color-5: rgba(0,0,0,0.09);
+$shadow-color-6: rgba(255,120,120,0.50);
+$shadow-color-7: rgba(199,199,199,0.50);
+
+$font-color-1:#9B9B9B;
+$font-color-2:#FFF;
+$font-color-3:#030303;
+$font-color-4: #D0021B;
+$font-color-5:  #4A4A4A;
+$font-color-phone: #9B9B9B;
+
+$border-color-1: #EBEBEB;
+$border-color-code: #D9DDE4;
+
+$font-color-asst: #B5BCCA;
+
+$line-color-1: #F5AAB0;
+
+$btn-color-1: #E11222;
+$btn-color-2: #FF9F00;
+
+//$topBar-background-image:"/public/images/frames/navigation.png";
+$topBar-background-image:"/partygo/assets/images/frames/navigation.png";
+
+//$comment-user-background-image:"/public/images/videoDetail/people.png";
+$comment-user-background-image:"/partygo/assets/images/videoDetail/people.png";
+
+// pixels to rems
+
+$baseFontSize: 37.5px;
+
+@function px2rem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+
+// font dpr
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}

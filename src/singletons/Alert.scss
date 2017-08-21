@@ -1,0 +1,35 @@
+@import "../constants/public.scss";
+
+.alert {
+
+  @include font-dpr(16px);
+
+  .modal-mask {
+    display: table;
+  }
+
+  .container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: inline-block;
+    width: px2rem(200px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px $shadow-color-1;
+  }
+
+  .title {
+    padding: px2rem(20px);
+  }
+
+  .btn {
+    display: block;
+    padding: px2rem(20px);
+    color: $main-color-1;
+  }
+
+}

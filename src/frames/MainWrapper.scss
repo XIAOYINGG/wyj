@@ -1,0 +1,33 @@
+@import "../constants/public.scss";
+
+.bottom-bar-item {
+  float: left;
+  width: 25%;
+  height: px2rem(49px);
+  a.active {
+    color: $main-color-1;
+  }
+  img{
+    height:px2rem(23px) ;
+  }
+  span{
+    @include font-dpr(12px)
+  }
+}
+
+.bottom-bar {
+  position: fixed;
+  z-index: 999;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: px2rem(49px);
+  background-color: $bar-bg-1;
+  box-shadow: 0px -2px 4px 0px $shadow-color-2;
+  text-align: center;
+  padding-top: px2rem(4px);
+}
+
+.main-wrapper {
+  padding-top: px2rem(44px);
+}

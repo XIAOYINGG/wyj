@@ -1,0 +1,28 @@
+@import "../constants/public.scss";
+
+.simple-top-bar {
+
+  @include font-dpr(17px);
+
+  .back {
+    position: absolute;
+    height: px2rem(44px);
+    left: 0;
+    padding: px2rem(11.5px) px2rem(11.5px) 0 px2rem(12px) ;
+    .backImg{
+      width: px2rem(13px);
+      height: px2rem(21px);
+    }
+  }
+
+  .btn {
+    color: #fff;
+    position: absolute;
+    height: px2rem(44px);
+    line-height: px2rem(44px);
+    top: 0;
+    right: 0;
+    padding: 0 px2rem(12px);
+  }
+
+}

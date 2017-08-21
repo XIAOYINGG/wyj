@@ -1,0 +1,21 @@
+{
+  "errCode": 0,
+  "data": {
+    "liveList": [
+      {
+        "state":1,
+        "url": "",
+        "title":"张太原：毛泽东《党委会的工作方法》解读《党委会的工作方法》解读(一)",
+        "time":"2017-03-08 10：00",
+        "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1489040373&di=7118b1e230a2dbb96b441942cc59bc24&src=http://pic.58pic.com/58pic/12/75/34/44z58PICxFq.jpg"
+      },
+      {
+        "state":0,
+        "url": "",
+        "title":"张太原：毛泽东《党委会的工作》解读（二）",
+        "time":"2017-03-08 10：00",
+        "img": "http://img1.imgtn.bdimg.com/it/u=189549709,3012353688&fm=23&gp=0.jpg"
+      }
+    ]
+  }
+}
