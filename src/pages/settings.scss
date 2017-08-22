@@ -1,0 +1,22 @@
+.set-detail{
+  height: px2rem(40px);
+  background: #FFFFFF;
+
+  p{
+    margin-left:px2rem(11px);
+    line-height: px2rem(40px);
+    font-size: px2rem(16px);
+    color: #000000;
+    letter-spacing: px2rem(0px);
+    border: px2rem(1px) solid #EBEBEB;
+
+  }
+  img{
+    float: right;
+    width: px2rem(15px);
+    height: px2rem(17px);
+    margin-top: px2rem(-30px);
+    margin-right: px2rem(10px);
+
+  }
+}

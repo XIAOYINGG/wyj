@@ -1,0 +1,18 @@
+@import "../constants/public.scss";
+
+.concrete-item{
+  float: left;
+  text-align: center;
+  width: 25%;
+  img{
+    width: px2rem(31px);
+    height: px2rem(40px);
+  }
+  span{
+    display: block;
+    font-size: px2rem(12px);
+    color: #9B9B9B;
+    letter-spacing: px2rem(0px);
+  }
+}
+

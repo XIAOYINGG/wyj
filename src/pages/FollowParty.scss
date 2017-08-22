@@ -1,0 +1,44 @@
+@import "../constants/public.scss";
+@import "./ItemTop.scss";
+@import "settings.scss";
+
+
+.follow-party{
+  .Item{
+    .item-info{
+      width: 100%;
+      height: px2rem(124px);
+      background-color: #FFFFFF;
+      p{
+        margin-left: px2rem(10px);
+        font-size: px2rem(16px);
+        color: #000000;
+        letter-spacing: px2rem(0px);
+        border: px2rem(1px) solid #EBEBEB;
+      }
+      .person{
+        padding: px2rem(10px);
+        .person-name{
+          line-height: px2rem(19px);
+          font-size: px2rem(16px);
+          color: #000000;
+          letter-spacing: px2rem(0px);
+          border: none;
+        }
+        .person-number{
+          font-size: px2rem(16px);
+          color: #9B9B9B;
+          letter-spacing: px2rem(0px);
+          border-bottom:  px2rem(1px) solid #EBEBEB;
+        }
+
+      }
+      .concrete{
+        padding-top: px2rem(12px);
+      }
+    }
+
+
+   }
+
+}
