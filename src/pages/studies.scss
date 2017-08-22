@@ -2,7 +2,7 @@
 
 .studies {
   .item {
-    padding-bottom: px2rem(12.5px);
+    padding: px2rem(12.5px);
     background: #ffffff;
     height: px2rem(105px);
     .learnDes {
@@ -10,19 +10,63 @@
       width: px2rem(222px);
       display: inline-block;
       height: 100%;
+      p{
+        font-size: px2rem(16px);
+        line-height:px2rem(21px) ;
+      }
       .learnInfo {
         position: absolute;
         width: 100%;
         height: px2rem(21px);
-        padding-top: px2rem(4.5px);
-        .level{
+        padding-top: px2rem(20px);
+        .level1{
+          width:px2rem(48px);
           display: inline-block;
-          vertical-align: middle;
+          background: #C7DFFF;
+          border-radius: px2rem(100px);
+          text-align: center;
+          p{
+            font-size: px2rem(12px);
+            display: inline-block;
+            color: #FFFFFF;
+            vertical-align: middle;
+          }
+        }
+        .level2{
+          width:px2rem(48px);
+          display: inline-block;
+          background: #FFE5B9;
+          border-radius: px2rem(100px);
+          text-align: center;
+          p{
+            font-size: px2rem(12px);
+            display: inline-block;
+            color: #FFFFFF;
+            vertical-align: middle;
+          }
+        }
+        .level3{
+          width:px2rem(48px);
+          display: inline-block;
+          background: #FFD1D7;
+          border-radius: px2rem(100px);
+          text-align: center;
+          p{
+            font-size: px2rem(12px);
+            display: inline-block;
+            color: #FFFFFF;
+            vertical-align: middle;
+          }
         }
         .date{
           display: inline-block;
           vertical-align: middle;
           color: #9B9B9B;
+          p{
+            margin-left: px2rem(14px);
+            font-size: px2rem(12px);
+            display: inline-block;
+          }
         }
         .focus{
           float: right;
@@ -62,7 +106,7 @@
           height: px2rem(9px);
         }
         span{
-          color: #FFF;
+          color: #4A4A4A;
         }
       }
     }

@@ -24,9 +24,13 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                // loader: 'style-loader!css-loader?importLoaders=1!postcss-loader!sass-loader',
-                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?importLoaders=1!postcss-loader!sass-loader'})
+                loader: 'style-loader!css-loader?importLoaders=1!postcss-loader!sass-loader',
+                // loader:
+                //     ExtractTextPlugin.extract(
+                //     { fallback: 'style-loader', use: 'css-loader?importLoaders=1!postcss-loader!sass-loader'}
+                // )
             },
+
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',

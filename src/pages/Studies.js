@@ -23,9 +23,27 @@ class Studies extends Component{
                                 <div className="learnDes">
                                     <p>{l.title}</p>
                                     <div className="learnInfo">
-                                        <div className="level">
-                                            <p>{l.category}</p>
-                                        </div>
+                                            {
+                                                (() => {
+                                                switch (l.category) {
+                                                    case "提高":
+                                                        return <div className="level1"><p className="up">{l.category}</p></div>
+
+                                                    case "基础":
+                                                        return <div className="level2">
+                                                            <p className="down">{l.category}</p>
+                                                        </div>
+                                                    case "研究":
+                                                        return <div className="level3">
+                                                            <p className="middle">{l.category}</p>
+                                                        </div>
+                                                    default:
+                                                        return  <div className="level2">
+                                                            <p className="down">{l.category}</p>
+                                                        </div>;
+                                                }
+                                            })()}
+
                                         <div className="date">
                                             <p>{l.time}</p>
                                         </div>
@@ -39,7 +57,7 @@ class Studies extends Component{
                                     <img src={l.img} className="video-img"/>
                                     <div className="video-state">
                                         <img src={picPathHead+`/images/learnParty/play${window.imgSuffix}.png`} alt="" className="learnPlay"/>
-                                        <span>{}</span>
+                                        <span>{l.long}</span>
                                     </div>
 
                                 </div>

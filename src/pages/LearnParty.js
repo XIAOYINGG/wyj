@@ -15,7 +15,7 @@ class LearnParty extends Component{
     constructor(props){
         super(props);
         this.init = this.init.bind(this);
-        this.test = this.test.bind(this);
+        //this.test = this.test.bind(this);
     }
     componentDidMount(){
         this.init();

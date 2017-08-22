@@ -38,7 +38,7 @@ class BottomBar extends Component {
         return (
             <div className="bottom-bar">
                 <BottomBarItem title="向你看" imgSrc = {picPathHead+`images/frames/lookParty`} to="/look-party" />
-                <BottomBarItem title="学你课" imgSrc = {picPathHead+"images/frames/learnParty"} to="learn-party"/>
+                <BottomBarItem title="学你课" imgSrc = {picPathHead+"images/frames/learnParty"} to="/learn-party"/>
                 <BottomBarItem title="听你讲" imgSrc = {picPathHead+"images/frames/listenParty"} to="/listen-party"/>
                 <BottomBarItem title="跟你走" imgSrc = {picPathHead+"images/frames/followParty"} to="/follow-party"/>
             </div>

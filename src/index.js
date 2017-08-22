@@ -21,6 +21,7 @@ import App from './frames/App'
 import LookParty from './pages/LookParty'
 import ListenParty from './pages/ListenParty'
 import LearnParty from './pages/LearnParty'
+import FollowParty from './pages/FollowParty'
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -43,7 +44,7 @@ ReactDOM.render(
                 <Route path="look-party" component={LookParty} />
                 <Route path="learn-party" component={LearnParty} />
                 <Route path="listen-party" component={ListenParty} />
-                {/*<Route path="follow-party" component={FollowParty} />*/}
+                <Route path="follow-party" component={FollowParty} />
             </Route>
         </Router>
     </Provider>
