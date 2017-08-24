@@ -9,30 +9,28 @@
       width: 100%;
       height: px2rem(124px);
       background-color: #FFFFFF;
-      p{
-        margin-left: px2rem(10px);
-        font-size: px2rem(16px);
-        color: #000000;
-        letter-spacing: px2rem(0px);
-        border: px2rem(1px) solid #EBEBEB;
-      }
-      .person{
-        padding: px2rem(10px);
-        .person-name{
-          line-height: px2rem(19px);
+
+      .item-info-top{
+        border-bottom: px2rem(1px) solid #EBEBEB;
+        p{
+          margin-left: px2rem(10px);
           font-size: px2rem(16px);
           color: #000000;
           letter-spacing: px2rem(0px);
-          border: none;
-        }
-        .person-number{
-          font-size: px2rem(16px);
-          color: #9B9B9B;
-          letter-spacing: px2rem(0px);
-          border-bottom:  px2rem(1px) solid #EBEBEB;
-        }
 
+        }
+        img{
+          float: right;
+          width: px2rem(15px);
+          height: px2rem(17px);
+          margin-top: px2rem(-30px);
+          margin-right: px2rem(10px);
+        }
       }
+
+
+
+
       .concrete{
         padding-top: px2rem(12px);
       }

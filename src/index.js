@@ -22,6 +22,7 @@ import LookParty from './pages/LookParty'
 import ListenParty from './pages/ListenParty'
 import LearnParty from './pages/LearnParty'
 import FollowParty from './pages/FollowParty'
+import LiveDetail from './pages/LiveDetail'
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -46,6 +47,7 @@ ReactDOM.render(
                 <Route path="listen-party" component={ListenParty} />
                 <Route path="follow-party" component={FollowParty} />
             </Route>
+            <Route path="/live/:liveId" component={LiveDetail}/>
         </Router>
     </Provider>
 , document.getElementById('app'));

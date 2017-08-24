@@ -1,15 +1,15 @@
 {
   "errCode":0,
   "data":{
-      "messages":[
+      "messages":
         {
           "url": "",
           "branchName":"第一",
           "personName":"CS-WYJ",
-          "telephone":"132456788XX",
-          "img":""
+          "telephone":"132456788XX"
+
         }
-      ]
+
   }
 }
 

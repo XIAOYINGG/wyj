@@ -30,7 +30,8 @@ class Lives extends Component {
                     liveList.map((l,i) => {
                             const srcUrl = l.isOver?`end${window.imgSuffix}.png`:`live${window.imgSuffix}.png`;
                             return(
-                                <a href="javascript:void(0)" key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>
+                                /*<a href="javascript:void(0)" key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>*/
+                                <Link to="/live/:liveId" key={`live-${i}`} onclick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>
                                     <div className="item">
                                         <div className="liveImage">
                                             <img src={l.img} alt="" className="liveLogo"/>
@@ -47,7 +48,8 @@ class Lives extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
+                                    /*</a>*/
                             )
                         }
                     )

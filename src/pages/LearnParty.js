@@ -31,7 +31,7 @@ class LearnParty extends Component{
         const { learnList } = this.props;
         return(
             <div className="learn-party">
-                <StatefulMainTopBar stateId="learn-party" loaderDelay title="学党课"/>
+                <StatefulMainTopBar stateId="learn-party" loaderDelay title="学你课"/>
                 <Studies learnList={learnList}/>
             </div>
 

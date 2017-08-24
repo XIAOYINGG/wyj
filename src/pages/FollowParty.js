@@ -9,6 +9,7 @@ import StatefulMainTopBar from '../containers/StatefulMainTopBar'
 import { picPathHead } from "../conf/conf"
 import './FollowParty.scss'
 import ConcreteInfo from "./ConcreteInfo"
+import { followPartyDataUrl } from '../urls/index'
 
 
 
@@ -16,15 +17,21 @@ class FollowParty extends Component{
     constructor(props){
         super(props);
     }
+    componentDidMount(){
+        const { fetchData } = this.props;
+         fetchData(followPartyDataUrl);
+    }
     render(){
         const {messages}=this.props;
         return(
             <div className="follow-party">
                 <StatefulMainTopBar stateId="follow-party" loaderDelay title="跟你走" />
                 <div className="Item">
-                    <ItemTop title="党支部信息"/>
+                    <ItemTop title="Branch信息"/>
                     <div className="item-info">
-                        <p>{messages.branchName}</p>
+                        <div className="item-info-top">
+                            <p>{messages.branchName}</p>
+                        </div>
                         <div className="concrete">
                             <ConcreteInfo itemTitle="会议" imgSrc={picPathHead+`/images/followParty/meet${window.imgSuffix}.png`} alt=""/>
                             <ConcreteInfo itemTitle="优秀心得" imgSrc={picPathHead+`/images/followParty/thoughts${window.imgSuffix}.png`} alt=""/>
@@ -34,13 +41,13 @@ class FollowParty extends Component{
                 <div className="Item">
                     <ItemTop title="个人信息"/>
                     <div className="item-info">
-                        <div className="person">
+                        <div className="item-info-top">
                             <p className="person-name">{messages.personName}</p>
                             <p className="person-phone">{messages.telephone}</p>
-                            <img src={messages.img}/>
+                            <img src={picPathHead+`/images/followParty/gt${window.imgSuffix}.png`} alt=""/>
                         </div>
                         <div className="concrete">
-                            <ConcreteInfo itemTitle="学习轨迹" imgSrc={picPathHead+`/images/followParty/track ${window.imgSuffix}.png`} alt=""/>
+                            <ConcreteInfo itemTitle="学习轨迹" imgSrc={picPathHead+`/images/followParty/track${window.imgSuffix}.png`} alt=""/>
                             <ConcreteInfo itemTitle="我的心得" imgSrc={picPathHead+`/images/followParty/my-exp${window.imgSuffix}.png`} alt=""/>
                             <ConcreteInfo itemTitle="消息通知" imgSrc={picPathHead+`/images/followParty/inform${window.imgSuffix}.png`} alt=""/>
                         </div>

@@ -1,6 +1,7 @@
 .set-detail{
   height: px2rem(40px);
   background: #FFFFFF;
+  border-bottom: px2rem(1px) solid #EBEBEB;
 
   p{
     margin-left:px2rem(11px);
@@ -8,8 +9,6 @@
     font-size: px2rem(16px);
     color: #000000;
     letter-spacing: px2rem(0px);
-    border: px2rem(1px) solid #EBEBEB;
-
   }
   img{
     float: right;
