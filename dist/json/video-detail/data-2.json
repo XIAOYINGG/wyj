@@ -6,7 +6,24 @@
       "url": "",
       "title":"张轩：《React全栈》解读(二)",
       "time":"2017-03-08 10：00",
-      "img":""
+      "img":"",
+      "picture":"",
+      "speaker":"张轩",
+      "speakerInfo":"1976年10月参加工作，在职博士研究生学历…",
+      "comments":[
+        {
+          "name":"CS",
+          "content":"第一，应该坚持勤奋学习。首先要加强学习。一是要认真学习专业知识，特别是要认真学习JS,CSS,HTML,JQuery。",
+          "commentTime":"08-23 13:20",
+          "num":"300"
+        },
+        {
+          "name":"KING",
+          "content":"第一，应该坚持勤奋学习。首先要加强学习。一是要认真学习专业知识，特别是要认真学习JS,CSS,HTML,JQuery。",
+          "commentTime":"08-25 13:30",
+          "num":"350"
+        }
+      ]
     }
   }
 }

@@ -4,9 +4,10 @@
 import * as actions from '../../actions/liveDetail/definations'
 
 const defaultState={
-    details:[],
+
     isFetching: false,
-    receivedAt: 0
+    receivedAt: 0,
+    details:[]
 };
 const liveDetail=(state = defaultState, action)=>{
     switch (action.type) {

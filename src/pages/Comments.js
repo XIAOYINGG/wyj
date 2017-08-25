@@ -18,13 +18,13 @@ class Comments extends Component{
                     comments.map((c,i)=>{
                         return(
                             <div className="">
-                                <p className="comment-name">{}</p>
-                                <p className="comment-content">{}</p>
+                                <p className="comment-name">{c.name}</p>
+                                <p className="comment-content">{c.content}</p>
                                 <div className="comment-bottom">
-                                    <span className="comment-time">{}</span>
+                                    <span className="comment-time">{c.commentTime}</span>
                                     <div className="zan">
-                                        <img src=""/>
-                                        <span>{}</span>
+                                        <img src={picPathHead+`/images/liveDetail/zan${window.imgSuffix}.png`} alt=""/>
+                                        <span>{c.num}</span>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,6 @@ class Comments extends Component{
 
 Comments = connect(
     state => ({
-        comments:state.liveDetail.details.comments
     }),
 )(Comments);
 

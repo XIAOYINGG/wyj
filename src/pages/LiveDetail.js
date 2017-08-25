@@ -9,6 +9,7 @@ import { liveDetailDataUrl } from '../urls/index'
 import { showLoader, hideLoader } from '../actions/singleton/loader'
 import fetchData from '../actions/liveDetail/fetchData'
 import Comments from "./Comments"
+import CommentInput from "./CommentInput"
 
 class LiveDetail extends Component{
     constructor(props){
@@ -29,25 +30,27 @@ class LiveDetail extends Component{
         return(
             <div className="live-detail">
                 <StatefulMainTopBar stateId="live-detail" loaderDelay title="听你讲"/>
-                <div className="">
+                <div className="live-info">
                     <div className="liveImage">
-                        <img src={} alt="" className="liveLogo"/>
-                        <img src={picPathHead+`/images/listenParty/start${window.imgSuffix}.png`} alt="" className="playImg"/>
+                        <img src={details.img} alt="" className="liveLogo"/>
+                        <img src={picPathHead+`/images/liveDetail/start${window.imgSuffix}.png`} alt="" className="playImg"/>
                     </div>
                     <div className="liveDes">
-                        <p>{}</p>
+                        <p>{details.title}</p>
                             <div className="time">
-                                <img src={picPathHead+`/images/listenParty/time${window.imgSuffix}.png`} alt=""/>
-                                <span>{}</span>
+                                <img src={picPathHead+`/images/liveDetail/time${window.imgSuffix}.png`} alt=""/>
+                                <span>{details.time}</span>
                             </div>
                             <div className="speaker">
-                                <img src=""/>
-                                <p className="">{}</p>
-                                <p className="">{}</p>
+                                <img src={details.picture} alt=""/>
+                                <p className="speaker-name">{details.speaker}</p>
+                                <p className="speaker-info">{details.speakerInfo}</p>
                             </div>
                     </div>
                 </div>
-                <Comments details = {details}/>
+                <Comments comments = {details.comments}/>
+                <CommentInput/>
+
             </div>
         )
     }
