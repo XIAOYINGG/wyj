@@ -5,6 +5,8 @@ import lookParty from './lookParty/index'
 import listenParty from './listenParty/index'
 import learnParty from './learnParty/index'
 import followParty from './followParty/index'
+import liveDetail from './liveDetail/index'
+import Comments from './comments/index'
 
 const index = combineReducers({
     foo,
@@ -12,7 +14,9 @@ const index = combineReducers({
     lookParty,
     listenParty,
     learnParty,
-    followParty
+    followParty,
+    liveDetail,
+    Comments
 
 });
 
