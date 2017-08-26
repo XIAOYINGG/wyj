@@ -1,0 +1,27 @@
+@import "../constants/public.scss";
+
+.comment-input{
+   background:  #FFFFFF;
+  input{
+    margin-left: px2rem(8px);
+    margin-top:px2rem(3px);
+    width: px2rem(307px);
+    height:px2rem(42px);
+    border: px2rem(1px) solid #E11222;
+    border-radius: px2rem(8px);
+    box-sizing: border-box;
+    background: rgba(241,241,241,0.39);
+    padding-left: px2rem(16px);
+  }
+  a{
+    background: rgba(241,241,241,0.39);
+    border: px2rem(1px) solid #E11222;
+    border-radius: px2rem(8px);
+    height:px2rem(42px);
+    width: px2rem(49px);
+    display: inline-block;
+    line-height: px2rem(42px);
+    text-align: center;
+    margin-right: px2rem(4px);
+  }
+}

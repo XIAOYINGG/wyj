@@ -1,7 +1,7 @@
 /**
  * Created by KING on 2017/8/22.
  */
-import * as actions from '../../actions/lookParty/definations'
+import * as actions from '../../actions/followParty/definations'
 
 const defaultState = {
     isFetching: false,

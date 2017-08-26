@@ -31,7 +31,7 @@ class Lives extends Component {
                             const srcUrl = l.isOver?`end${window.imgSuffix}.png`:`live${window.imgSuffix}.png`;
                             return(
                                 /*<a href="javascript:void(0)" key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>*/
-                                <Link to={"/live/"+l.liveId } key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>
+                                <Link to={"/live/"+l.liveId}key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>
                                     <div className="item">
                                         <div className="liveImage">
                                             <img src={l.img} alt="" className="liveLogo"/>

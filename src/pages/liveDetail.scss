@@ -1,0 +1,91 @@
+@import "../constants/public.scss";
+@import "./comments.scss";
+@import "./commentInput.scss";
+.live-detail{
+  .live-info{
+    height: px2rem(340px);
+    .liveImage{
+      height:px2rem(210px);
+      padding-top: px2rem(49px);
+      position: relative;
+      .liveLogo{
+        width: 100%;
+        height: 100%;
+      }
+      .playImg{
+        position: absolute;
+        width: px2rem(55px);
+        height: px2rem(55px);
+        /*bottom: px2rem(2px);*/
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        //display: inline;
+      }
+    }
+    .liveDes{
+      .liveDes-title{
+        padding-left: px2rem(8px);
+        p{
+          text-align: center;
+          margin-top: px2rem(8px);
+          line-height: px2rem(21px);
+          font-size: px2rem(17px);
+          color: #030303;
+        }
+      }
+      .time{
+        position: absolute;
+        width: 100%;
+        height: px2rem(14px);
+        margin-top: px2rem(5px);
+        padding-left: px2rem(8px);
+        padding-bottom: px2rem(20px);
+        border-bottom: px2rem(1px) solid #D9DDE4;
+
+        img{
+          width: px2rem(12px);
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: px2rem(5px);
+        }
+        span{
+          display: inline-block;
+          vertical-align: middle;
+          color: #9B9B9B;
+        }
+      }
+      .speaker{
+        margin-top: px2rem(30px);
+        display: inline-block;
+        background: white;
+        width: 100%;
+        img{
+          margin-top: px2rem(5px);
+          width: px2rem(50px);
+          height: px2rem(50px);
+          padding: px2rem(9px);
+          float: left;
+        }
+        .txt{
+          position: relative;
+          display: inline-block;
+          padding-left: px2rem(5px);
+          padding-top: px2rem(10px);
+          .speaker-name{
+            font-size: px2rem(14px);
+            color: #4A4A4A;
+          }
+          .speaker-info{
+            font-size: px2rem(12px);
+            color: #9B9B9B;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}

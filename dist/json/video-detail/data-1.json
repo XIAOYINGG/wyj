@@ -1,23 +1,26 @@
 {
   "errCode": 0,
   "data": {
-    "details": {
+    "details":{
       "liveId":"",
       "url": "",
       "title":"张轩：《React全栈》解读(一)",
       "time":"2017-03-08 10：00",
-      "img":"",
-      "picture":"",
+      "img":"http://img2.imgtn.bdimg.com/it/u=3633020005,1486615643&fm=214&gp=0.jpg",
+      "picture":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2482410387,327840447&fm=26&gp=0.jpg",
       "speaker":"张轩",
-      "speakerInfo":"1976年10月参加工作，在职博士研究生学历…",
-      "comments":[
+      "speakerInfo":"1976年10月参加工作，在职博士研究生学历…"
+    },
+    "comments":[
         {
+          "url":"",
           "name":"CS",
           "content":"第一，应该坚持勤奋学习。首先要加强学习。一是要认真学习专业知识，特别是要认真学习JS,CSS,HTML,JQuery。",
           "commentTime":"08-23 13:20",
           "num":"300"
         },
         {
+          "url":"",
           "name":"KING",
           "content":"第一，应该坚持勤奋学习。首先要加强学习。一是要认真学习专业知识，特别是要认真学习JS,CSS,HTML,JQuery。",
           "commentTime":"08-25 13:30",
@@ -26,6 +29,6 @@
       ]
     }
   }
-}
+
 
 
