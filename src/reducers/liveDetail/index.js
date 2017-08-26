@@ -7,7 +7,8 @@ const defaultState={
 
     isFetching: false,
     receivedAt: 0,
-    details:[]
+    details:{},
+    comments:[]
 };
 const liveDetail=(state = defaultState, action)=>{
     switch (action.type) {

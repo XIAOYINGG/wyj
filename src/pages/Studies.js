@@ -19,7 +19,7 @@ class Studies extends Component{
                 {
                     learnList.map((l,i) => {
                         return(
-                            <div className="item">
+                            <div className="item" key={`studies-${i}`}>
                                 <div className="learnDes">
                                     <p>{l.title}</p>
                                     <div className="learnInfo">

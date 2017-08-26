@@ -10,7 +10,7 @@ import { showLoader, hideLoader } from '../actions/singleton/loader'
 import fetchData from '../actions/liveDetail/fetchData'
 import Comments from "./Comments"
 import CommentInput from "./CommentInput"
-import { commentsDataUrl } from '../urls/index'
+import './liveDetail.scss'
 
 class LiveDetail extends Component{
     constructor(props){
@@ -21,15 +21,14 @@ class LiveDetail extends Component{
     }
     async init(){
         const {liveId}=this.props.params;
-        /*const {isOver}=this.props.location.query;*/
         const { fetchData } = this.props;
-        await fetchData(liveDetailDataUrl,liveId/*,isOver*/);
-        fetchData(commentsDataUrl);
+        await fetchData(liveDetailDataUrl,liveId);
+
     }
 
     render(){
-        const {details}=this.props;
-        const {comments}=this.props;
+        const {details,comments}=this.props;
+
         return(
             <div className="live-detail">
                 <StatefulMainTopBar stateId="live-detail" loaderDelay title="听你讲"/>
@@ -39,16 +38,20 @@ class LiveDetail extends Component{
                         <img src={picPathHead+`/images/liveDetail/start${window.imgSuffix}.png`} alt="" className="playImg"/>
                     </div>
                     <div className="liveDes">
-                        <p>{details.title}</p>
-                            <div className="time">
+                        <div className="liveDes-title">
+                            <p>{details.title}</p>
+                        </div>
+                        <div className="time">
                                 <img src={picPathHead+`/images/liveDetail/time${window.imgSuffix}.png`} alt=""/>
                                 <span>{details.time}</span>
-                            </div>
-                            <div className="speaker">
+                        </div>
+                        <div className="speaker">
                                 <img src={details.picture} alt=""/>
+                            <div className="txt">
                                 <p className="speaker-name">{details.speaker}</p>
                                 <p className="speaker-info">{details.speakerInfo}</p>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <Comments comments = {comments}/>
@@ -61,7 +64,7 @@ class LiveDetail extends Component{
 LiveDetail = connect(
     state => ({
         details:state.liveDetail.details,
-        comments:state.Comments.comments
+        comments:state.liveDetail.comments
     }),
     {
         fetchData,

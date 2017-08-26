@@ -1,0 +1,54 @@
+@import "../constants/public.scss";
+.comments{
+  height: px2rem(274px);
+  background-color: #f4f4f4 ;
+  .comment-item{
+    padding-top: px2rem(9px);
+    height: 50%;
+    .comment-name{
+      float: left;
+      display: inline-block;
+      font-size: px2rem(13px);
+      margin-left: px2rem(7px);
+      line-height: px2rem(20px);
+      color:#FFF;
+      background: #F5AAB0;
+      border-radius: px2rem(200px);
+      text-align: center;
+
+    }
+    .comment-content{
+     // margin-top: calc(-18rem/37.5);
+      margin-left: px2rem(64px);
+      margin-right: px2rem(5px);
+      font-size: px2rem(14px);
+      color: #000000;
+
+    }
+    .comment-bottom{
+      margin-left: px2rem(60px);
+      padding: px2rem(9px) ;/*px2rem(5px)*/
+      display: inline-block;
+
+      .comment-time{
+        position: relative;
+        display: inline-block;
+        font-size: px2rem(12px);
+        color:#9B9B9B ;
+
+      }
+      .zan{
+        position: relative;
+        float: right;
+        padding-left: px2rem(180px);
+        img{
+          width: px2rem(12px);
+          height: px2rem(13px);
+        }
+        span{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

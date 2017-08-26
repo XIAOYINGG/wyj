@@ -23,11 +23,11 @@ class Comments extends Component{
                 {
                     comments.map((c,i)=>{
                         return(
-                            <div className="comment-item">
+                            <div className="comment-item" key={`liveDetail-${i}`}>
                                 <p className="comment-name">{c.name}</p>
                                 <p className="comment-content">{c.content}</p>
                                 <div className="comment-bottom">
-                                    <span className="comment-time">{c.commentTime}</span>
+                                    <p className="comment-time">{c.commentTime}</p>
                                     <div className="zan">
                                         <img src={picPathHead+`/images/liveDetail/zan${window.imgSuffix}.png`} alt=""/>
                                         <span>{c.num}</span>
