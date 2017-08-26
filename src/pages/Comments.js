@@ -4,12 +4,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { picPathHead } from "../conf/conf"
+import { commentsDataUrl } from '../urls/index'
+import fetchData from '../actions/comments/fetchData'
+import { showLoader, hideLoader } from '../actions/singleton/loader'
 
 class Comments extends Component{
     constructor(props){
         super(props);
     }
-
+    /*componentDidMount(){
+        const { fetchData } = this.props;
+        fetchData(commentsDataUrl);
+    }*/
     render(){
         const { comments }=this.props;
         return(
@@ -17,7 +23,7 @@ class Comments extends Component{
                 {
                     comments.map((c,i)=>{
                         return(
-                            <div className="">
+                            <div className="comment-item">
                                 <p className="comment-name">{c.name}</p>
                                 <p className="comment-content">{c.content}</p>
                                 <div className="comment-bottom">
@@ -39,7 +45,13 @@ class Comments extends Component{
 
 Comments = connect(
     state => ({
+
     }),
+    /*{
+        fetchData,
+        showLoader,
+        hideLoader
+    }*/
 )(Comments);
 
 export default Comments;
