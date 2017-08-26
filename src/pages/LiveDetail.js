@@ -48,8 +48,8 @@ class LiveDetail extends Component{
                             </div>
                     </div>
                 </div>
-                <Comments comments = {details.comments}/>
-                <CommentInput/>
+                {/*<Comments comments = {details.comments}/>*/}
+                {/*<CommentInput/>*/}
 
             </div>
         )

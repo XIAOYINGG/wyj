@@ -5,7 +5,7 @@ import fetch from 'isomorphic-fetch'
 
 import * as actions from './definations'
 
-const fetchData = (url) => {
+const fetchData = (url,liveId) => {
     return {
         types: [
             actions.FETCH_DATA_REQUEST,
@@ -14,12 +14,12 @@ const fetchData = (url) => {
         ],
         fetchFunc: () => {
             return fetch(
-                url,
+                url+liveId+".json",
                 { credentials: 'same-origin' }
             );
         },
         shouldFetch: state => {
-            return Date.now() - state.liveDetail.receivedAt > 10000;
+            return Date.now() - state.liveDetail.receivedAt > 1000;
         },
         payload: {}
     }

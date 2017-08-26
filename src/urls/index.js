@@ -6,7 +6,7 @@ export const learnPartyDataUrl = './dist/json/learn-party-data.json';
 
 export const followPartyDataUrl='./dist/json/follow-party-data.json';
 
-export const liveDetailDataUrl='./dist/json/video-detail/data-1.json';
+export const liveDetailDataUrl='./dist/json/video-detail/data-';
 
 
 

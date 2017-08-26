@@ -3,6 +3,7 @@
   "data": {
     "liveList": [
       {
+        "liveId":1,
         "state":1,
         "url": "",
         "title":"张轩：《React全栈》解读(一)",
@@ -10,6 +11,7 @@
         "img": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1489040373&di=7118b1e230a2dbb96b441942cc59bc24&src=http://pic.58pic.com/58pic/12/75/34/44z58PICxFq.jpg"
       },
       {
+        "liveId":2,
         "state":0,
         "url": "",
         "title":"张轩：《React全栈》解读（二）",
