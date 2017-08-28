@@ -10,6 +10,8 @@ export const liveDetailDataUrl='./dist/json/video-detail/data-';
 
 /*export const commentsDataUrl='./dist/json/video-detail/data-1.json';*/
 
+export const videoDetailDataUrl='./dist/json/video/data-';
+
 
 
 

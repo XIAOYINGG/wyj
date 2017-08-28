@@ -11,7 +11,7 @@ class Lives extends Component {
     constructor(props) {
         super(props);
     }
-    enterLive(liveId,visited,isOver,title){
+    //enterLive(liveId,visited,isOver,title){
         // const { live } = this.props;
         // if(visited){
         //     hashHistory.push({pathname:"/live/"+liveId,query:{isOver:isOver,live:live}})
@@ -21,7 +21,7 @@ class Lives extends Component {
         //     saveLiveData(title);
         //     hashHistory.push({pathname:"/live/code",query:{liveId:liveId,isOver:isOver,live:live}})
         // }
-    }
+   // }
     render() {
         const { liveList } = this.props;
         return (
@@ -31,7 +31,7 @@ class Lives extends Component {
                             const srcUrl = l.isOver?`end${window.imgSuffix}.png`:`live${window.imgSuffix}.png`;
                             return(
                                 /*<a href="javascript:void(0)" key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>*/
-                                <Link to={"/live/"+l.liveId}key={`live-${i}`} onClick={this.enterLive.bind(this,l.liveId,l.visited,l.isOver,l.title)}>
+                                <Link to={"/live/"+l.liveId}key={`live-${i}`} >
                                     <div className="item">
                                         <div className="liveImage">
                                             <img src={l.img} alt="" className="liveLogo"/>

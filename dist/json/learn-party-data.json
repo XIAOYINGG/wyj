@@ -3,6 +3,7 @@
   "data":{
     "learnList":[
       {
+        "videoId":"1",
         "url": "",
         "title":"张轩：《React全栈》解读(一)",
         "category":"提高",
@@ -12,6 +13,7 @@
         "long":"01:30"
       },
       {
+        "videoId":"2",
         "url": "",
         "title":"张轩：《React全栈》解读(二)",
         "category":"基础",
@@ -21,6 +23,7 @@
         "long":"01:30"
       },
       {
+        "videoId":"3",
         "url": "",
         "title":"张轩：《React全栈》解读(三)",
         "category":"基础",
@@ -30,8 +33,19 @@
         "long":"01:30"
       },
       {
+        "videoId":"4",
         "url": "",
         "title":"张轩：《React全栈》解读(四)",
+        "category":"研究",
+        "time":"2017-03-08 10：00",
+        "img":"http://img02.tooopen.com/images/20160518/tooopen_sy_162741774515.jpg",
+        "count":"500",
+        "long":"02:30"
+      },
+      {
+        "videoId":"5",
+        "url": "",
+        "title":"张轩：《React全栈》解读(五)",
         "category":"研究",
         "time":"2017-03-08 10：00",
         "img":"http://img02.tooopen.com/images/20160518/tooopen_sy_162741774515.jpg",

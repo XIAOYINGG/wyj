@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { picPathHead } from "../conf/conf"
 import './studies.scss'
+import { Link, hashHistory } from "react-router"
 
 
 class Studies extends Component{
@@ -19,7 +20,8 @@ class Studies extends Component{
                 {
                     learnList.map((l,i) => {
                         return(
-                            <div className="item" key={`studies-${i}`}>
+                            <Link to={"/video/"+l.videoId} key={`video-${i}`} >
+                            <div className="item">
                                 <div className="learnDes">
                                     <p>{l.title}</p>
                                     <div className="learnInfo">
@@ -62,6 +64,7 @@ class Studies extends Component{
 
                                 </div>
                             </div>
+                            </Link>
                     )
                 }
                     )
