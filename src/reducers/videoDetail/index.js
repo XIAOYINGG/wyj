@@ -19,7 +19,7 @@ const videoDetail=(state=defaultState,action)=>{
             return Object.assign({},state,{
                 ...action.json.data,
                 isFetching:false,
-                receivedAt:action.timeStamp
+                receivedAt:action.timestamp
             });
         case actions.FETCH_DATA_FAILURE:
             return Object.assign({},state,{

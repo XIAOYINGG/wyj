@@ -7,6 +7,7 @@ import learnParty from './learnParty/index'
 import followParty from './followParty/index'
 import liveDetail from './liveDetail/index'
 import videoDetail from './videoDetail/index'
+import videoList from './videoList/index'
 
 const index = combineReducers({
     foo,
@@ -16,7 +17,8 @@ const index = combineReducers({
     learnParty,
     followParty,
     liveDetail,
-    videoDetail
+    videoDetail,
+    videoList
 
 });
 

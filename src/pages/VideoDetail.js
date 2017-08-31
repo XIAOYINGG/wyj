@@ -26,6 +26,7 @@ class VideoDetail extends Component{
 
     render(){
         const {videos,comments}=this.props;
+       /* const backUrl = section == 15 ?"/learn-party":`/videos/${section}`;*/
         return(
             <div className="video-detail">
                 <StatefulMainTopBar stateId="video-detail" loaderDelay title="学你课"/>

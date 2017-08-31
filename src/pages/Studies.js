@@ -14,13 +14,14 @@ class Studies extends Component{
     }
 
     render(){
-        const { learnList } = this.props;
+        /*const { videoList,section} = this.props;*/
+        const {videoList} = this.props;
         return(
             <div className="studies">
                 {
-                    learnList.map((l,i) => {
+                    videoList.map((l,i) => {
                         return(
-                            <Link to={"/video/"+l.videoId} key={`video-${i}`} >
+                            <Link className="section" to={"/video/"+l.videoId}  key={`video-${i}`} >
                             <div className="item">
                                 <div className="learnDes">
                                     <p>{l.title}</p>
@@ -73,10 +74,8 @@ class Studies extends Component{
         );
     }
 }
-
-Studies = connect(
+/*Studies = connect(
     state => ({
     }),
-)(Studies);
-
+)(Studies);*/
 export default Studies

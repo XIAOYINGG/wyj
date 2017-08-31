@@ -82,11 +82,11 @@ class LookParty extends Component {
                         <span>记忆</span>
                         {/*<span style={{margin:"0"}}>的本钱</span>*/}
                     </Link>
-                    <Link className="section">
+                    <Link className="section" to="videos/14">
                         <img src={picPathHead+`images/lookParty/h${window.imgSuffix}.png`} alt=""/>
                         <span style={{color:"#C7C7C7"}}>人生</span>
                     </Link>
-                    <Link className="section" >
+                    <Link className="section" to="videos/15" >
                         <img src={picPathHead+`images/lookParty/i${window.imgSuffix}.png`} alt=""/>
                         <span style={{color:"#C7C7C7"}}>用典</span>
                     </Link>

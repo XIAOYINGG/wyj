@@ -24,6 +24,7 @@ import LearnParty from './pages/LearnParty'
 import FollowParty from './pages/FollowParty'
 import LiveDetail from './pages/LiveDetail'
 import VideoDetail from './pages/VideoDetail'
+import VideoList from './pages/VideoList'
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -49,6 +50,7 @@ ReactDOM.render(
                 <Route path="follow-party" component={FollowParty} />
             </Route>
             <Route path="/live/:liveId" component={LiveDetail}/>
+            <Route path="/videos/:section" component={VideoList}/>
             <Route path="/video/:videoId" component={VideoDetail}/>
         </Router>
     </Provider>

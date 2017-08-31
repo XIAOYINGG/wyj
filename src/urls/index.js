@@ -8,9 +8,9 @@ export const followPartyDataUrl='./dist/json/follow-party-data.json';
 
 export const liveDetailDataUrl='./dist/json/video-detail/data-';
 
-/*export const commentsDataUrl='./dist/json/video-detail/data-1.json';*/
-
 export const videoDetailDataUrl='./dist/json/video/data-';
+
+export const videoListDataUrl='./dist/json/video-list/data-';
 
 
 
