@@ -19,8 +19,10 @@ const defaultState={
 };
 
 const videoList=(state=defaultState,action)=>{
-    switch (action.types){
+    switch (action.type){
+
         case actions.FETCH_DATA_REQUEST:
+            console.log("################");
             return Object.assign({},state,{
             isFetching:true, videoListId:action.videoListId
         });

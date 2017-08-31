@@ -45,11 +45,13 @@ const fetchJsonMw = ({ dispatch, getState }) => next => action => {
         // })
         .then(response => response.json())
         .then(json => {
+            console.log("***********");
             dispatch(Object.assign({}, payload, {
                 type: successType,
                 json,
                 timestamp: Date.now()
             }));
+            console.log("##dispatch");
             return {
                 status: 'resolved',
                 value: json

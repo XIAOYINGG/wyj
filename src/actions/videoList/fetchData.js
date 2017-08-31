@@ -6,7 +6,7 @@ import  * as actions from './definations'
 
 const fetchData=(url,section)=>{
     const endUrl = url + section+".json";
-    console.log("####",endUrl)
+    console.log("####",endUrl);
     return {
         types: [
             actions.FETCH_DATA_REQUEST,
@@ -20,7 +20,7 @@ const fetchData=(url,section)=>{
             );
         },
         shouldFetch: state => {
-            return Date.now() - state.videoList['videoList_'+section].receivedAt > 0;
+            return Date.now() - state.videoList['videoList_'+section].receivedAt > 10000;
         },
         payload: {
             videoListId:section
